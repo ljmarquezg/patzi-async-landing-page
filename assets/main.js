@@ -38,18 +38,15 @@ const fetchData = async (urlApi, options) => {
                 </div>
                 <div class="mt-4 flex justify-between">
                     <h3 class="text-sm text-gray-700">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        ${movie?.original_title}
+                        ReleaseDate
                     </h3>
-                    <p class="text-sm text-gray-900">
-                    <label>Release Date</label>
+                    <p class="text-sm text-gray-400">
                         ${movie?.release_date}
-                    </h3>
+                    </p>
                 </div>
             </div>`).join('')}
         `;
         
-        console.log(view);
         content.innerHTML = view;
     } catch (error) {
         showErrors(error);
